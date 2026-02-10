@@ -27,7 +27,7 @@ export function AgendaSaudeSlide() {
           </a>
 
           <p className="text-zinc-400 text-sm max-w-md mx-auto leading-relaxed mt-2">
-            Sistema FullStack para gestão de saúde. Documentação completa do projeto, incluindo arquitetura e funcionalidades.
+            Sistema FullStack para gestão de saúde. Aprsentação completa do projeto, incluindo arquitetura e funcionalidades.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function AgendaSaudeSlide() {
             onClick={() => window.open(pdfUrl, "_blank")}
           >
             <FileText className="h-4 w-4" />
-            Visualizar Documentação (PDF)
+            Visualizar Apresentação (PDF)
           </Button>
         </div>
 

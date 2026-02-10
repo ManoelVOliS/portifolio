@@ -2,6 +2,27 @@ import { FolderGit2, User, FileDown } from "lucide-react"
 
 import cvFile from "@/assets/Manoel Victor Oliveira.pdf" 
 
+import { ResearchCodeSlide } from "@/components/slides/research-code"
+import { RepoStructureSlide } from "@/components/slides/repo-structure"
+import { ResearchPaperSlide } from "@/components/slides/research-paper"
+import { AgendaSaudeSlide } from "@/components/slides/agenda-saude"
+import { AgendaFullstack } from "@/components/slides/agenda-fullstack"
+import { ResumeSlide } from "@/components/slides/resume-slide"
+
+export const PROJECTS_SLIDES = [
+  <ResearchCodeSlide key="research-code" />,
+  <ResearchPaperSlide key="research-paper" />,
+  <ResumeSlide key="resume-slide" />, 
+  <AgendaSaudeSlide key="agenda-saude" />,
+  <AgendaFullstack key="agenda-fullstack" />,
+  <RepoStructureSlide key="repo-tree" />,
+]
+
+export const CAROUSEL_OPTIONS = {
+  loop: true,
+  dragFree: true,
+}
+
 export const NAV_ITEMS = [
   {
     id: "projects",
@@ -21,7 +42,6 @@ export const NAV_ITEMS = [
     label: "Currículo",
     onClick: () => {
       window.open(cvFile, "_blank");
-
     }, 
   },
 ]
