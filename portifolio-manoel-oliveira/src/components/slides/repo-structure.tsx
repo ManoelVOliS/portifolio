@@ -110,18 +110,19 @@ function RenderTree({ nodes, path = "" }: { nodes: FileNode[], path?: string }) 
 
 export function RepoStructureSlide() {
   return (
-    <div className="w-full max-w-[90vw] md:max-w-sm h-full max-h-[24rem] md:max-h-[28rem] flex flex-col ...">
-      <div className="w-full max-w-sm h-full max-h-[28rem] flex flex-col rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden">
+    <div className="w-full h-full flex items-center justify-center p-0 md:p-2">
 
-        <div className="flex items-center gap-2 border-b border-zinc-800 bg-zinc-900/50 px-4 py-3 text-sm text-zinc-400">
-          <GitBranch className="h-4 w-4 text-purple-400" />
+      <div className="w-[85vw] md:max-w-sm h-full max-h-[24rem] md:max-h-[28rem] flex flex-col rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden">
+
+        <div className="flex items-center gap-2 border-b border-zinc-800 bg-zinc-900/50 px-3 py-3 text-xs md:text-sm text-zinc-400">
+          <GitBranch className="h-3 w-3 md:h-4 md:w-4 text-purple-400" />
           <span className="font-mono text-zinc-500">main</span>
           <span className="text-zinc-600">/</span>
-          <span className="font-semibold text-white">portfolio-manoel</span>
+          <span className="font-semibold text-white truncate">portfolio-manoel</span>
         </div>
 
         <div 
-          className="flex-1 overflow-y-auto p-4 bg-zinc-950/80 scrollbar-thin scrollbar-thumb-zinc-800"
+          className="flex-1 overflow-y-auto p-3 md:p-4 bg-zinc-950/80 scrollbar-thin scrollbar-thumb-zinc-800"
           onPointerDown={(e) => e.stopPropagation()} 
         >
           <Files>

@@ -78,6 +78,6 @@
     @apply border-border; /* Agora isso vai funcionar porque definimos --color-border lá em cima */
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
 }
