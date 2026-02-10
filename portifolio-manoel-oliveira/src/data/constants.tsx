@@ -1,4 +1,4 @@
-import { Home, FolderGit2, User, FileDown } from "lucide-react"
+import { FolderGit2, User, FileDown } from "lucide-react"
 
 import { ResearchCodeSlide } from "@/components/slides/research-code"
 import { RepoStructureSlide } from "@/components/slides/repo-structure"
