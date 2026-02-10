@@ -37,12 +37,7 @@ export const NAV_ITEMS = [
     icon: <FileDown className="h-5 w-5" />,
     label: "Currículo",
     onClick: () => {
-      const link = document.createElement('a');
-      link.href = './public/Manoel Victor Oliveira.pdf';
-      link.download = 'Manoel_Oliveira_CV.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      window.open('./public/Manoel Victor Oliveira.pdf', '_blank');
     }, 
   },
 ]
