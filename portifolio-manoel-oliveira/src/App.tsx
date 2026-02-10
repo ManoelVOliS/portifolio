@@ -12,7 +12,7 @@ function App() {
 
       <div className="relative flex min-h-screen w-full flex-col bg-zinc-950 text-white font-sans selection:bg-emerald-500/30">
 
-        {/* <Navbar /> */}
+        <Navbar />
 
         <main className="flex flex-col w-full">
 
