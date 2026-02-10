@@ -22,12 +22,11 @@ export function ResearchPaperSlide() {
 
         <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
           {/* Botão para o Artigo Completo */}
-          <Button 
-            variant="outline" 
+          <Button  
             className="gap-2 bg-blue-600 hover:bg-blue-700 text-white"
             onClick={() => window.open(pdfSlide2, "_blank")}
           >
-            <Download className="h-4 w-4" />
+            <Presentation className="h-4 w-4" />
             Ver Slides da Apresentação Ano 1
           </Button>
           {/* Botão para os Slides/Apresentação */}

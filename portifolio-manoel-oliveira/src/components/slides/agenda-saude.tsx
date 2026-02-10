@@ -1,4 +1,4 @@
-import { FileText, HeartPulse, Github } from "lucide-react" // <--- Adicionei o Github aqui
+import { FileText, HeartPulse, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function AgendaSaudeSlide() {
