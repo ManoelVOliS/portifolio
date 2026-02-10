@@ -1,4 +1,4 @@
-import { FileText, Download, Presentation } from "lucide-react"
+import { FileText, Presentation } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function ResearchPaperSlide() {
