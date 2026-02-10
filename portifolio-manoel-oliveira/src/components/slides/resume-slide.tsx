@@ -12,14 +12,7 @@ export function ResumeSlide() {
         <div className="bg-emerald-500/10 p-4 rounded-full">
           <User className="h-10 w-10 text-emerald-400" />
         </div>
-
-        <div>
-          <h3 className="text-xl font-bold text-white mb-2">Currículo Profissional</h3>
-          <p className="text-zinc-400 text-sm max-w-md mx-auto leading-relaxed">
-            Experiência completa em desenvolvimento FullStack, histórico acadêmico e competências técnicas detalhadas.
-          </p>
-        </div>
-
+        
         <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
           <Button 
             className="gap-2 bg-emerald-600 hover:bg-emerald-700 text-white"

@@ -7,12 +7,10 @@ import { RepoStructureSlide } from "@/components/slides/repo-structure"
 import { ResearchPaperSlide } from "@/components/slides/research-paper"
 import { AgendaSaudeSlide } from "@/components/slides/agenda-saude"
 import { AgendaFullstack } from "@/components/slides/agenda-fullstack"
-import { ResumeSlide } from "@/components/slides/resume-slide"
 
 export const PROJECTS_SLIDES = [
   <ResearchCodeSlide key="research-code" />,
   <ResearchPaperSlide key="research-paper" />,
-  <ResumeSlide key="resume-slide" />, 
   <AgendaSaudeSlide key="agenda-saude" />,
   <AgendaFullstack key="agenda-fullstack" />,
   <RepoStructureSlide key="repo-tree" />,
