@@ -124,10 +124,10 @@ copyFinder(database, filteredFiles, outputFile)`
 
   return (
     <div className="w-full h-full flex items-center justify-center p-0 md:p-2">
-      {/* 1. Card Principal */}
-      <div className="w-full max-w-3xl h-full max-h-[28rem] flex flex-col rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden">
         
-        {/* Cabeçalho Fixo */}
+      <div className="w-[90vw] max-w-3xl h-full max-h-[28rem] flex flex-col rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden">
+
+        {/* Header Fixo */}
         <div className="flex items-center justify-between border-b border-zinc-800 bg-zinc-900/50 px-4 py-3 shrink-0">
              <div className="flex items-center gap-2 text-zinc-400">
                <FileIcon className="h-4 w-4 text-blue-400" />
@@ -138,11 +138,10 @@ copyFinder(database, filteredFiles, outputFile)`
                 <span>Python 3.11</span>
              </div>
         </div>
-
-        {/* 2. Área de Rolagem com Stop Propagation */}
+        
         <div 
-          className="flex-1 overflow-y-auto bg-zinc-950/80 p-4 cursor-text scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent"
-          onPointerDown={(e) => e.stopPropagation()}
+          className="flex-1 overflow-auto bg-zinc-950/80 p-4 cursor-text scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent"
+          onPointerDown={(e) => e.stopPropagation()} // Impede o carrossel de arrastar ao interagir aqui
         >
            <div className="text-zinc-300 text-xs sm:text-sm font-mono leading-relaxed whitespace-pre font-ligatures-none">
              {pythonCode}

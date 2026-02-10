@@ -110,7 +110,7 @@ function RenderTree({ nodes, path = "" }: { nodes: FileNode[], path?: string }) 
 
 export function RepoStructureSlide() {
   return (
-    <div className="w-full h-full flex items-center justify-center p-0 md:p-2">
+    <div className="w-full max-w-[90vw] md:max-w-sm h-full max-h-[24rem] md:max-h-[28rem] flex flex-col ...">
       <div className="w-full max-w-sm h-full max-h-[28rem] flex flex-col rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden">
 
         <div className="flex items-center gap-2 border-b border-zinc-800 bg-zinc-900/50 px-4 py-3 text-sm text-zinc-400">
